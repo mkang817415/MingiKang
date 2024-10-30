@@ -1,0 +1,40 @@
+/* Base styles for the progress container */
+.progress {
+    height: 25px; /* Make the progress bar a bit taller */
+    background-color: #f3f3f3; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for effect */
+  }
+  
+  /* Styles for the progress bar */
+  .progress-bar {
+    height: 100%; /* Full height to fill container */
+    line-height: 25px; /* Vertically center text inside */
+    font-weight: bold; /* Bold text for readability */
+    transition: width 0.5s ease; /* Smooth transition */
+    color: #ffffff; /* Text color inside progress bar */
+    border-radius: 10px 0 0 10px; /* Rounded corners only on the left */
+  }
+  
+  /* Colors for specific progress bars */
+  .progress-bar.bg-success {
+    background-color: #28a745; /* Custom green */
+  }
+  
+  .progress-bar.bg-info {
+    background-color: #17a2b8; /* Custom blue */
+  }
+  
+  .progress-bar.bg-warning {
+    background-color: #ffc107; /* Custom yellow */
+  }
+  
+  .progress-bar.bg-danger {
+    background-color: #dc3545; /* Custom red */
+  }
+  
+  /* Add a glow effect */
+  .progress-bar-glow {
+    box-shadow: 0px 0px 15px rgba(40, 167, 69, 0.5); /* Green glow for success */
+  }
